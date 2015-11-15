@@ -1,4 +1,9 @@
-# Integration of grunt-as-promised and building libraries
+# Integration of build libraries
+
+Libraries:
+
+* [grunt-as-promised](https://github.com/arpinum-oss/grunt-as-promised)
+* [building](https://github.com/arpinum-oss/building)
 
 ## License
 
