@@ -1,0 +1,19 @@
+{
+  "name": "grunt-as-promised-and-building-examples",
+  "version": "0.0.1",
+  "description": "Integration of grunt-as-promised and building libraries",
+  "repository": "arpinum-oss/grunt-as-promised-and-building-examples",
+  "private": true,
+  "author": {
+    "name": "Arpinum",
+    "url": "http://arpinum.fr"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "building": "^1.0.0",
+    "grunt": "^0.4.5",
+    "grunt-as-promised": "0.0.2",
+    "jshint": "^2.8.0",
+    "mocha": "^2.3.3"
+  }
+}
