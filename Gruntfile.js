@@ -4,12 +4,14 @@ var gap = require('grunt-as-promised');
 var shell = require('building').shell;
 
 module.exports = function (grunt) {
-  gap.registerTask(grunt, 'eslint', function () {
-    return shell.execute('eslint', ['.'], {resolveLocalBin: true});
+  gap.configure(grunt);
+
+  grunt.registerPromiseTask('eslint', function () {
+    return shell.executeLocal('eslint', ['.']);
   });
 
-  gap.registerTask(grunt, 'mocha', function () {
-    return shell.execute('mocha', ['lib'], {resolveLocalBin: true});
+  grunt.registerPromiseTask('mocha', function () {
+    return shell.executeLocal('mocha', ['lib']);
   });
 
   grunt.registerTask('default', ['eslint', 'mocha']);
